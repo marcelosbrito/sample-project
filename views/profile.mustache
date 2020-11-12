@@ -1,0 +1,32 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="/css/style.css" type="text/css" />
+</head>
+
+<body class="container">
+    <span>{{timestamp}}</span>
+    <h1>Name: {{name}}</h1>
+    <img class="profile-image" src="{{image}}">
+    <h2>Company: {{company}}</h1>
+    <h3>Skills</h3>
+    <ol>
+      {{#skills}}
+        <li>
+            {{.}}
+        </li>
+      {{/skills}}
+    </ol>
+
+    <form  action="/addprofile" method="POST">
+      <input type="text" name="name" placeholder="Name" /><br />
+      <input type="text" name="username" placeholder="Username" /><br />
+      <input type="text" name="image" placeholder="Image (/images/example.png)" /><br />
+      <input type="text" name="company" placeholder="Company" /><br />
+      <input type="text" name="skills" placeholder="Skills" /><br />
+      <input type="submit" value="Add Profile" /><br />
+    </form>
+
+</body>
+
+</html>
