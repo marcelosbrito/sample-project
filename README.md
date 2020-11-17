@@ -5,7 +5,7 @@ An application solely to practice Node.JS and Git.
 # What I Learned
 
 - Developed a profile creation with Node.js & Express.
-- Firt time using template engine and project generator (mustache & turbo360).
+- First time using template engine and project generator (mustache & turbo360).
 - Git Basics (init, add, status, commit, push, pull, clone, branch, checkout, merge)
 
 ## Instructions
